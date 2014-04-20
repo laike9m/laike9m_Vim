@@ -18,8 +18,8 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-let NERDTreeShowHidden=1
-
+let NERDTreeShowHidden=1  " 可显示以~开头的文件
+let NERDTreeShowBookmarks=1  
 " My bundles here:
 " original repos on GitHub
 Bundle 'scrooloose/nerdtree'
