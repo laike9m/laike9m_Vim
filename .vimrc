@@ -10,6 +10,10 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+" Windows settings:
+" set rtp+=~/vimfiles/bundle/vundle/
+" let path='~/vimfiles/bundle'
+" call vundle#rc(path)
 
 " let Vundle manage Vundle
 " required! 
