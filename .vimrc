@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 set nu
+syntax on                     " 开启语法高亮
+au GUIEnter * simalt ~x       " 最大化窗口
 
 " basic configuration
 :set shiftwidth=4 tabstop=4
