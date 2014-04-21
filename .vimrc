@@ -10,9 +10,13 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 :set modifiable
 :colorscheme desert
 
-set rtp+=~/vimfiles/bundle/vundle/
-let path='~/vimfiles/bundle'
-call vundle#rc(path)
+" Linux
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" Windows
+" set rtp+=~/vimfiles/bundle/vundle/
+" let path='~/vimfiles/bundle'
+" call vundle#rc(path)
 
 " let Vundle manage Vundle
 " required! 
