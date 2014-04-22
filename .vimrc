@@ -3,6 +3,7 @@ filetype off                  " required!
 set nu
 syntax on                     " 开启语法高亮
 au GUIEnter * simalt ~x       " 最大化窗口
+set backspace=indent,eol,start " 保证退格键可以正常工作
 
 " basic configuration
 :set shiftwidth=4 tabstop=4
