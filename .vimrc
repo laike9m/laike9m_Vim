@@ -2,7 +2,9 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 set nu
 syntax on                     " 开启语法高亮
-au GUIEnter * simalt ~x       " 最大化窗口
+au GUIEnter * simalt ~x       " Windows 最大化窗口
+set lines=999 columns=999     " Linux 最大化窗口,两个中根据当前系统注释掉另一个
+
 set backspace=indent,eol,start " 保证退格键可以正常工作
 
 " basic configuration
@@ -23,7 +25,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 let NERDTreeShowHidden=1
-let NERDTreeShowBookmarks=1  " 显示书签
+let NERDTreeShowBookmarks=1                 " 显示书签
 let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
 
 " My bundles here:
