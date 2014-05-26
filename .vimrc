@@ -7,6 +7,7 @@ set lines=999 columns=999     " Linux 最大化窗口,两个中根据当前系�
 set fileencodings=utf-8,gbk   " 解决中文编码问题
 set backspace=indent,eol,start " 保证退格键可以正常工作
 set noswapfile                " 不产生swp文件
+set autoread                  " 文件变化时可以实时刷新
 
 " basic configuration
 :set shiftwidth=4 tabstop=4
