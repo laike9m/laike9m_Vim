@@ -23,6 +23,8 @@ if has("gui_running")
 		set lines=999 columns=999     " Linux 最大化窗口
     	set guifont=Inconsolata\ 12
   	elseif has("gui_macvim")
+		set rtp+=~/.vim/bundle/vundle/ " Vundle setting
+		call vundle#rc()
     	set guifont=Menlo\ Regular:h14
   	elseif has("gui_win32")
 		set rtp+=~/vimfiles/bundle/vundle/ " Vundle setting
