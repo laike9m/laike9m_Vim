@@ -15,16 +15,25 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 filetype plugin indent on     " required!
 
+set rtp+=~/.vim/bundle/vundle/ " Vundle setting
+call vundle#rc()
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1                 " 显示书签
+let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
+
+" My bundles here:
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'klen/python-mode'
+
 " set font
 if has("gui_running")
   	if has("gui_gtk2")
-		set rtp+=~/.vim/bundle/vundle/ " Vundle setting
-		call vundle#rc()
 		set lines=999 columns=999     " Linux 最大化窗口
     	set guifont=Inconsolata\ 12
   	elseif has("gui_macvim")
-		set rtp+=~/.vim/bundle/vundle/ " Vundle setting
-		call vundle#rc()
     	set guifont=Menlo\ Regular:h14
   	elseif has("gui_win32")
 		set rtp+=~/vimfiles/bundle/vundle/ " Vundle setting
@@ -33,14 +42,4 @@ if has("gui_running")
 		au GUIEnter * simalt ~x       " Windows 最大化窗口
         set guifont=Consolas:h11:cANSI
     endif
-
-    " let Vundle manage Vundle
-	Bundle 'gmarik/vundle'
-	let NERDTreeShowHidden=1
-	let NERDTreeShowBookmarks=1                 " 显示书签
-	let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
-
-	" My bundles here:
-	Bundle 'scrooloose/nerdtree'
-	Bundle 'jistr/vim-nerdtree-tabs'
 endif
