@@ -6,6 +6,7 @@ set fileencodings=utf-8,gbk   " 解决中文编码问题
 set backspace=indent,eol,start " 保证退格键可以正常工作
 set noswapfile                " 不产生swp文件
 set autoread                  " 文件变化时可以实时刷新
+set hlsearch				  " 高亮搜索文本
 
 " basic configuration
 :set shiftwidth=4 tabstop=4
