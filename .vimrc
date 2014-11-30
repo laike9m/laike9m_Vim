@@ -7,8 +7,8 @@ set backspace=indent,eol,start " 保证退格键可以正常工作
 set noswapfile                " 不产生swp文件
 set autoread                  " 文件变化时可以实时刷新
 set hlsearch				  " 高亮搜索文本
+set omnifunc=syntaxcomplete#Complete " omni-complete
 
-" basic configuration
 :set shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 :set modifiable
@@ -20,12 +20,12 @@ set rtp+=~/.vim/bundle/vundle/ " Vundle setting
 call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-let NERDTreeShowHidden=1
-let NERDTreeShowBookmarks=1                 " 显示书签
-let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
 
 " My bundles here:
 Bundle 'scrooloose/nerdtree'
+let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1                 " 显示书签
+let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'klen/python-mode'
 
