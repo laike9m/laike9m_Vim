@@ -11,6 +11,7 @@ set omnifunc=syntaxcomplete#Complete " omni-complete
 
 :set shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 :set modifiable
 :colorscheme desert
 
