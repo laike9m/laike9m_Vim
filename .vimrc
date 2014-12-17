@@ -28,6 +28,10 @@ let NERDTreeShowBookmarks=1                 " 显示书签
 let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'klen/python-mode'
+Bundle 'panozzaj/vim-autocorrect'
+" auto correction
+iabbrev uplaoder uploader 
+iabbrev Uplaoder Uploader 
 
 " set font
 if has("gui_running")
