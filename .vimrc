@@ -18,7 +18,7 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 filetype plugin indent on     " required!
 
 set rtp+=~/.vim/bundle/vundle/ " Vundle setting
-call vundle#rc()
+call vundle#begin()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
@@ -29,7 +29,9 @@ let NERDTreeShowBookmarks=1                 " 显示书签
 let NERDTreeIgnore=['\.\.$', '\.$', '\~$']  " 不显示.和..路径
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'klen/python-mode'
-Bundle 'panozzaj/vim-autocorrect'
+Plugin 'panozzaj/vim-autocorrect'
+
+call vundle#end()
 " auto correction
 iabbrev uplaoder uploader 
 iabbrev Uplaoder Uploader 
